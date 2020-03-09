@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>vocab</title>
+  </head>
+  <body>
+    <div class="slidershow middle">
+      <!--vocab-->
+      <div class="slides">
+        <div class="s1" id="p1">
+          difference
+          <div class="overlay" id="o1">
+            差異<br />
+            cha yi
+            <div class="picture" onclick="hita()"></div>
+          </div>
+        </div>
+        <div class="s1" id="p2">
+          computer
+          <div class="overlay" id="o2">
+            電腦<br />
+            dian nao
+            <div class="picture" onclick="hits()"></div>
+          </div>
+        </div>
+        <div class="s1" id="p3">
+          software
+          <div class="overlay" id="o3">
+            程式<br />
+            cheng shi
+            <div class="picture" onclick="hit()"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--alert-->
+      <div
+        class="alert alert-success"
+        id="star"
+        role="alert"
+        style="border-radius: 10px"
+      >
+        <strong>Added</strong> to revision log
+      </div>
+      <div
+        class="alert alert-warning"
+        id="remove"
+        role="alert"
+        style="border-radius: 10px"
+      >
+        <strong>Removed</strong> from revision log
+      </div>
+    </div>
+    <!--pop-up-->
+    <div class="page" id="pages">
+      <h1>Great Job!</h1>
+      <p>You have reviewed <strong>3</strong> vocabularies</p>
+      <button id="exits" class="exit">Exit</button>
+      <button id="exiting" class="review">Review Again</button>
+    </div>
+  </body>
+</html>
